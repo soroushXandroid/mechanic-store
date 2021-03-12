@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">XdTrial</string>
+
+    <string name="marketer_hint_name">نام</string>
+    <string name="marketer_hint_family">نام خانوادگی</string>
+    <string name="marketer_hint_code">کد ملی</string>
+    <string name="marketer_hint_brand">نام فروشگاه</string>
+    <string name="marketer_hint_phone">شماره موبایل</string>
+    <string name="sign_up">ثبت نام</string>
+    <string name="hello">سلام!</string>
+    <string name="caption">برای ایجاد حساب جدید فرم را با دقت پر کنید.</string>
+    <string name="already_have_an_acc">قبلا حساب کاربری خود را ایجاد کرده اید؟</string>
+    <string name="guid_to_sign_in">ورود به حساب</string>
+    <string name="guid_to_sign_up">برای ایجاد حساب بر روی ثبت نام کلیک کنید</string>
+    <string name="title_activity_main_panel">MainPanel</string>
+    <string name="list_person">لیست مشتری ها</string>
+    <string name="add_person">افزودن مشتری</string>
+    <string name="add_oil">افزودن روغن</string>
+    <string name="add_sms">ارسال پیامک</string>
+    <string name="sample_name">سروش</string>
+    <string name="sample_family">صابرزاده</string>
+    <string name="hint_first_pelak">2 رقم اول پلاک</string>
+    <string name="hint_last_pelak">3 رقم آخر پلاک</string>
+    <string name="hint_iran_pelak">ایران</string>
+    <string name="hint_char_pelak">حرف پلاک</string>
+    <string name="hint_car_model">مدل</string>
+    <string name="hint_car_brand">برند</string>
+    <string name="hint_car_gear">نوع دنده</string>
+    <string name="hint_car_color">رنگ</string>
+    <string name="hint_car_oil">مثال : کاسپین</string>
+    <string name="hint_sms_field">متن دلخواه خود را برای ارسال به مشتری های فروشگاه بنویسید…</string>
+    <string name="info_countdownview_sms">زمان باقی مانده تا ارسال پیام به مشتری ها</string>
+    <string name="info_days_til_send">روز تا ارسال پیامک</string>
+    <string name="hint_add_oil">نوع روغن موتور</string>
+    <string name="hint_used_oil">روغن موتور استفاده شده</string>
+    <string name="hint_type_gear">نوع دنده</string>
+    <string name="stop_sending">توقف ارسال</string>
+    <string name="caption_oil">نام روغن موتور موجود</string>
+    <string name="caption_personal">مشخصات مالک خودرو</string>
+    <string name="caption_car">مشخصات خودرو</string>
+    <string name="caption_pelak">مشخصات پلاک خودرو</string>
+    <string name="title_phone_confirmation">شماره همراه</string>
+    <string name="caption_input_phone">شماره همراه خود را بدون عدد صفر در کادر زیر وارد کنید</string>
+    <string name="country_code">(+98)</string>
+    <string name="underline_hint">_ _ _ _ _ _ _</string>
+    <string name="caption_code_input">لطفا کد ارسال شده از طریق پیامک را در قسمت زیر وارد کنید.</string>
+    <string name="space">      </string>
+
+</resources>

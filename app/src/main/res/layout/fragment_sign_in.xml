@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".SignInFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/logo_si"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/logo_sign_in"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/si_code_melli"
+        style="@style/Widget.Mechanic.TextInputLayout"
+        android:layout_width="@dimen/width_of_inputLayouts"
+        android:layout_height="wrap_content"
+        android:hint="@string/marketer_hint_code"
+        app:shapeAppearance="@style/CornerCut"
+        app:layout_constraintTop_toBottomOf="@id/logo_si"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:startIconDrawable="@drawable/ic_visibility_off"
+        android:layout_marginTop="60dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_si_code_melli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/behdad"
+            android:inputType="number"
+            android:textAlignment="textEnd"
+            android:maxLength="11"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.Mechanic.TextInputLayout"
+        android:id="@+id/si_phone"
+        android:layout_width="@dimen/width_of_inputLayouts"
+        android:layout_height="wrap_content"
+        app:shapeAppearance="@style/CornerCut"
+        android:layout_marginTop="@dimen/between_inputLayouts_margin"
+        app:layout_constraintTop_toBottomOf="@id/si_code_melli"
+        app:layout_constraintEnd_toEndOf="@id/si_code_melli"
+        app:layout_constraintStart_toStartOf="@id/si_code_melli"
+        app:startIconDrawable="@drawable/ic_phone"
+        app:startIconCheckable="true"
+        android:hint="@string/marketer_hint_phone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_phone_si"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textAlignment="textEnd"
+            android:fontFamily="@font/behdad"
+            android:maxLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_sign_in"
+        android:layout_width="@dimen/width_of_inputLayouts"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@id/si_phone"
+        app:layout_constraintStart_toStartOf="@id/si_code_melli"
+        app:layout_constraintEnd_toEndOf="@id/si_code_melli"
+        android:layout_marginTop="35dp"
+        android:text="@string/guid_to_sign_in"
+        style="@style/Widget.SignIn.Button"
+        app:shapeAppearance="@style/CornerRound"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:id="@+id/linear_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/btn_sign_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_guid_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            style="@style/Widget.Mechanic.Button.TextButton"
+            app:shapeAppearance="@style/CornerRound"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_after"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/special"
+            android:textColor="@color/colorAccent"
+            android:text="@string/guid_to_sign_up"/>
+
+    </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/si_lottie_bee_loading"
+        app:lottie_rawRes="@raw/bee_loading"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

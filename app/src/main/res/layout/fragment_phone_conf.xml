@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/logo_phone_conf"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/logo_call"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/logo_phone_conf"
+        app:layout_constraintStart_toStartOf="@id/logo_phone_conf"
+        app:layout_constraintEnd_toEndOf="@id/logo_phone_conf"
+        android:text="@string/title_phone_confirmation"
+        android:fontFamily="@font/behdad"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_caption_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_phone"
+        app:layout_constraintStart_toStartOf="@id/logo_phone_conf"
+        app:layout_constraintEnd_toEndOf="@id/logo_phone_conf"
+        android:text="@string/caption_input_phone"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:fontFamily="@font/behdad"
+        android:layout_marginTop="30dp" />
+
+
+    <LinearLayout
+        android:id="@+id/linear_phone"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_phone_bg"
+        app:layout_constraintTop_toBottomOf="@id/tv_caption_phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Mechanic.Button.TextButton"
+            android:text="@string/country_code"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_gravity="center"
+            app:icon="@drawable/ic_phone"
+            android:alpha="0.60"
+            android:clickable="false"
+            android:focusable="false" />
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="1dp"
+            android:rotation="90"
+            android:background="#000"
+            android:layout_gravity="center" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_input_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.1"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center"
+            android:maxLength="12"
+            android:textColor="#000"
+            android:hint="@string/underline_hint"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mb_conf_phone"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/linear_phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:text="ثبت شماره"
+        android:alpha="0.95"
+        android:fontFamily="@font/behdad"
+        app:elevation="1dp"
+        android:textStyle="bold"
+        android:enabled="false"/>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/seperator"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        app:layout_constraintTop_toBottomOf="@id/mb_conf_phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/seperator"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_caption_cf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/seperator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/caption_code_input"
+        android:ems="10"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:fontFamily="@font/behdad"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_code_cf"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_caption_cf"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/input_phone_bg"
+        android:gravity="center"
+        android:letterSpacing="0.3"
+        android:maxLength="5"
+        android:textColor="@color/colorAccent"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_marginTop="15dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mb_conf_code"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_code_cf"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:text="ثبت کد"
+        android:alpha="0.95"
+        android:fontFamily="@font/behdad"
+        app:elevation="1dp"
+        android:textStyle="bold"
+        android:enabled="false"
+        android:visibility="gone"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/conf_lottie_bee_loading"
+        app:lottie_rawRes="@raw/bee_loading"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

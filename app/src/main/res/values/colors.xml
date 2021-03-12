@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#12121C</color>
+    <color name="colorPrimaryDark">#EA5842</color>
+    <color name="ex">#ED7E6D</color>
+    <color name="colorAccent">#5F6CFA</color>
+    <color name="windowBackground">#FEF8F8</color>
+    <color name="textColorPrimary">#3C3B3B</color>
+    <color name="lowAlphaEditTextBg">#308A7F7F</color>
+    <color name="fabCheckColor">#375C1C</color>
+
+</resources>

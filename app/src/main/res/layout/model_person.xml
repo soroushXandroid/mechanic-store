@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="1dp"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        android:background="@drawable/color">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_name_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:drawableEnd="@drawable/ic_person"
+            android:layout_margin="20dp"
+            android:maxLength="17"
+            android:textStyle="bold"
+            android:fontFamily="@font/behdad"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_phone_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_name_person"
+            app:layout_constraintEnd_toEndOf="@id/tv_name_person"
+            android:drawableEnd="@drawable/ic_phone"
+            android:fontFamily="@font/behdad"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_marginTop="10dp"
+            android:maxLength="15" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_car_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_phone_person"
+            app:layout_constraintEnd_toEndOf="@id/tv_name_person"
+            android:drawableEnd="@drawable/ic_phone"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/behdad"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:gravity="end"
+            android:textStyle="bold"
+            android:textDirection="rtl"
+            android:maxLength="29" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_oil_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/tv_car_person"
+            app:layout_constraintTop_toBottomOf="@id/tv_phone_person"
+            android:drawableEnd="@drawable/ic_oil_new"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/behdad"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:gravity="end"
+            android:textStyle="bold"
+            android:paddingStart="25dp"
+            android:paddingEnd="10dp"
+            android:maxLength="20"
+            android:textDirection="rtl" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_name_person"
+            app:layout_constraintBottom_toTopOf="@id/tv_phone_person"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tv_phone_person"
+            android:orientation="horizontal"
+            android:background="@drawable/pelak1">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_first_pelak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="25dp"
+                android:paddingEnd="5dp"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center"
+                android:textSize="26sp"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/special"
+                android:textStyle="bold"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_char_pelak"
+                android:layout_width="38dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center"
+                android:textSize="23sp"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/special"
+                android:textStyle="bold"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_last_pelak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center"
+                android:textSize="26sp"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/special"
+                android:textStyle="bold"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_iran_pelak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:background="@android:color/transparent"
+                android:layout_gravity="end"
+                android:textSize="26sp"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/special"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_person_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/behdad"
+            android:textColor="@android:color/black"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_circle_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/tv_person_date"
+            app:layout_constraintBottom_toBottomOf="@id/tv_person_date"
+            app:layout_constraintStart_toEndOf="@id/tv_person_date"
+            android:layout_marginStart="10dp"
+            app:srcCompat="@drawable/ic_add_circle"
+            android:stateListAnimator="@animator/elevation_anim"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

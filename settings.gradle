@@ -1,0 +1,2 @@
+rootProject.name='XdTrial'
+include ':app'
